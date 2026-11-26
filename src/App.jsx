@@ -6,6 +6,10 @@ import './App.css'
     return(<div><h1>I am developer {props.name} </h1></div>)
   } 
 
+  function Name({name, age}){
+    return(<div><h3>My team name is {name}. His age is {age}</h3></div>)
+  }
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -19,6 +23,8 @@ function App() {
       {/* Part 1 */}
       <h1>My company name is {name} and this company is {age} year old</h1>
       <Showname name={"Asmeet"}/>
+      <Name name={"Akash"} age={14}/>
+      
 
     </>
   )
